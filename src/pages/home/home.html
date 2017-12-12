@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-searchbar (ionInput)="getItems($event)" round></ion-searchbar>    
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <button ion-button full color="light">Localização</button>
+  <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="openPedidoPage(item)" icon-start>
+        <ion-avatar item-start>
+            <img src="{{item.icone}}">
+          </ion-avatar>
+      <p>{{ item.nome }}</p>
+      <p>{{ item.valor }}</p>
+    </button>
+  </ion-list>  
+</ion-content>

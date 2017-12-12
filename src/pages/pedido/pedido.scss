@@ -1,0 +1,85 @@
+page-pedido {
+    img.item{
+        width: 80%;
+        border: thin solid;
+        padding: 5px;
+        margin: 0px 10px 10px 0;
+    }
+
+    img.mapa{
+        width: 100%;
+        border: thin solid;
+    }
+    
+    ion-grid{
+        padding: 100px;
+        align-items: center;
+        position: relative;
+    }
+    .qty-wrap {
+        font-size: 12px;
+        line-height: 17px;
+        position: absolute;
+        height: 17px;
+        width: 60px;
+        left: 10px;
+        top: 0;
+        text-align: center;
+    }
+    .icon {
+        position: relative;
+        width: 13px;
+        height: 13px;
+    }
+    .icon-plus {
+        right: 2px;
+        background-color: #73c501;
+        border-color: #73c501;
+    }
+    .icon-minus {
+        background-color: #bc2026;
+        border-color: #bc2026;
+        left: 0;
+    }
+    .icon-plus, .icon-minus {
+        display: block;
+        position: absolute;
+        margin: 0;
+        top: 0;
+        border: 2px solid #eaeaea;
+        border-radius: 8px;
+        padding: 6px;
+        box-sizing: border-box;
+    }
+    .icon-minus:before {
+        background-color: transparent;
+    }
+
+    .icon-plus:before {
+        background-color: #fff;
+        width: 2px;
+        height: 8px;
+        border-radius: 1px;
+        position: absolute;
+        top: 2px;
+        left: 5px;
+        content: "";
+    }
+    
+    .icon-plus:after, .icon-minus:after {
+        background-color: #fff;
+        width: 8px;
+        height: 2px;
+        border-radius: 1px;
+        position: absolute;
+        top: 5px;
+        left: 2px;
+        content: "";
+    }
+    a {
+        color: #0252aa;
+        text-decoration: none;
+        cursor: pointer;
+    }
+      
+}
